@@ -1,9 +1,13 @@
 {
-  "name": "@repo/ui",
+  "name": "@repo/common",
   "version": "0.0.0",
   "private": true,
   "exports": {
-    "./*": "./src/*.tsx"
+    "./lib/*": "./src/lib/*.ts",
+		"./hooks/*": "./src/hooks/*.tsx",
+		"./components/ui/*": "./src/components/ui/*.tsx",
+		"./globals.css": "./src/styles/globals.css",
+		"./postcss.config": "./postcss.config.mjs"
   },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
